@@ -2,22 +2,13 @@
 
 powerful orm framework for go, supporting pq/mysql/sqlite3.
 
-## License
-  - full go type support
-  - easy for usage, simple CRUD operation
-  - auto join with relation table
-  - cross DataBase compatible query
-  - Raw SQL query / mapper without orm model
-  - full test keep stable and strong
-
 ## Install
-```
-go get github.com/geego/gorm
-```
 
-## How to use
-### Simple Usage
-```
+`go get -u github.com/geego/gorm`
+
+## Examples
+
+```go
   package main
 
   import (
@@ -61,8 +52,6 @@ go get github.com/geego/gorm
   }
 ```
 
-## License 
+## License
 
-fork form [beego/orm](https://github.com/astaxie/beego/tree/master/orm)
-
-orm source code is licensed under the Apache Licence, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html). this library base on beego orm. thanks beego team and astaxie.
+Inspired by `beego` and under [BSD License](./LICENSE)
