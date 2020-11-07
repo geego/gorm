@@ -25,14 +25,14 @@ powerful orm framework for go, supporting pq/mysql/sqlite3.
 
   func init() {
     // register model
-    orm.RegisterModel(new(User))
+    gorm.RegisterModel(new(User))
 
     // set default database
-    orm.RegisterDataBase("default", "mysql", "root:root@/my_db?charset=utf8", 30)
+    gorm.RegisterDataBase("default", "mysql", "root:root@/my_db?charset=utf8", 30)
   }
 
   func main() {
-    o := orm.NewOrm()
+    o := gorm.NewOrm()
 
     user := User{Name: "slene"}
 
